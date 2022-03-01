@@ -11,6 +11,10 @@ public class Main {
         students.add(new Student(4, "Le Minh Quan", "Ha Noi"));
         students.add(new Student(5, "Le Minh Quan", "Ha Noi"));
         writeToFile("student.txt", students);
+        List<Student> studentDataFromFile = readDataFromFile("student.txt");
+        for (Student student : studentDataFromFile) {
+            System.out.println(student);
+        }
     }
 
 
